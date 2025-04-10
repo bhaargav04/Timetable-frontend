@@ -21,7 +21,7 @@ const Signin = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:8000/signin", {
+      const response = await fetch("https://timetable-backend-otdy.onrender.com/signin", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
