@@ -21,7 +21,7 @@ const Signin = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://timetable-backend-otdy.onrender.com/signin", {
+      const response = await fetch(`${process.env.API}signin`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
